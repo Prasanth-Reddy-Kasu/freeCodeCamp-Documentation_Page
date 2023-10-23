@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'/>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0'/>
+    <title>technical Documentation Page - HTML</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body>
+    <nav id='navbar'>
+        <header class='header-nav'>HTML Documentation</header>
+        <ul>
+          <li><a class='nav-link' href='#Introduction_to_HTML'>Introduction to HTML</a></li>
+          <li><a class='nav-link' href='#HTML_Basics'>HTML Basics</a></li>
+          <li><a class='nav-link' href='#Document_Structure_in_HTML'>Document Structure in HTML</a></li>
+          <li><a class='nav-link' href='#Text_Content'>Text Content</a></li>
+          <li><a class='nav-link' href='#Images_and_Media'>Images and Media</a></li>
+          <li><a class='nav-link' href='#Forms_and_User_Input'>Forms and User Input</a></li>
+          <li><a class='nav-link' href='#Semantic_HTML'>Semantic HTML</a></li>
+          <li><a class='nav-link' href='#HTML_Attributes'>HTML Attributes</a></li>
+          <li><a class='nav-link' href='#Advanced_HTML_Features'>Advanced HTML Features</a></li>
+          <li><a class='nav-link' href='#References_and_Resources'>References and Resources</a></li>
+        </ul>
+    </nav>
+    <main id='main-doc'>
+        <section id='Introduction_to_HTML' class='main-section'>
+            <header>Introduction to HTML</header>
+            <article>
+            <h4>What is HTML?</h4>
+            <p>HTML, which stands for "Hypertext Markup Language," is the core language used for creating web pages and structuring content on the World Wide Web. It consists of a set of elements and tags that define the structure and layout of web documents. HTML is not a programming language but rather a markup language. It is interpreted by web browsers to display content, such as text, images, links, and multimedia.</p>
+            <h4>Importance of HTML in Web Development</h4>
+            <p>HTML is the foundation of web development, as it defines the structure of a web page. It provides a standardized way to organize content, making it accessible to users across different devices and platforms. Without HTML, the web as we know it would not exist. HTML is used in conjunction with other technologies like CSS for styling and JavaScript for interactivity, enabling the creation of rich and interactive web experiences.</p>
+            <h4>HTML Versions and Evolution</h4>
+            <p>HTML, which stands for "Hypertext Markup Language," is the core language used for creating web pages and structuring content on the World Wide Web. It consists of a set of elements and tags that define the structure and layout of web documents. HTML is not a programming language but rather a markup language. It is interpreted by web browsers to display content, such as text, images, links, and multimedia.</p>
+            </article>
+        </section>
+        <section id='HTML_Basics' class='main-section'>
+            <header>HTML Basics</header>
+            <article>
+            <h4>HTML Elements and Tags</h4>
+            <p>HTML documents are constructed using a variety of elements, each designed for a specific purpose. These elements are enclosed in tags, which are expressed within angle brackets. For example, the <p> tag is used to define a paragraph. Tags come in pairs, with an opening tag <tag> and a closing tag </tag>. Elements can be nested within each other to create complex structures. It's essential to understand the most commonly used elements and their associated tags, like headings, paragraphs, lists, links, and more.</p>
+            <h4>Document Structure</h4>
+            <p>A typical HTML document follows a specific structure that helps web browsers interpret the content correctly. It consists of several key elements, such as:
+                <ul>
+                    <li>
+                    <p><b>&lt; !DOCTYPE html &gt; :</b> This declaration specifies the document type and version, indicating that it's an HTML5 document.</p>
+                    </li>
+                    <li>
+                    <p><b>&lt; html &gt; :</b> The root element that contains all other HTML elements in the document.</p>
+                    </li>
+                    <li>
+                    <p><b>&lt; head &gt; :</b> This section includes metadata about the page, such as the title and links to external stylesheets or scripts.
+                        <ul>
+                            <li>&lt;title&gt;: Document Title</li>
+                            <li>&lt;meta&gt;: Metadata</li>
+                            <li>&lt;link&gt;: External Resources (CSS, Favicon, etc.)</li>
+                            <li>&lt;style&gt;: Internal CSS</li>
+                            <li>&lt;script&gt;: External and Internal Scripts</li>
+                            <li>&lt;base&gt;: Base URL for Relative Links</li>
+                        </ul>
+                    </p>
+                    </li>
+                    <li>
+                        <p><b>&lt; body &gt; :</b> The content of the web page, including text, images, and interactive elements, resides within this element.
+                            <ul>
+                                <li>&lt;header&gt;: Page Header</li>
+                                <li>&lt;nav&gt;: Navigation Menu</li>
+                                <li>&lt;main&gt;: Main Content Area</li>
+                                <li>&lt;section&gt;: Sections of Content</li>
+                                <li>&lt;article&gt;: Self-Contained Content</li>
+                                <li>&lt;aside&gt;: Sidebar Content</li>
+                                <li>&lt;footer&gt;: Page Footer</li>
+                                <li>&lt;div&gt;: Generic Container</li>
+                            </ul>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+            <h4>Basic HTML Template</h4>
+            <p>It's a good practice to start with a basic HTML template for every web page. This template typically includes the following structure:
+                <code>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &nbsp;&lt;head&gt;<br>
+                    &nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+                    &nbsp;&nbsp;&lt;title&gt;Your Page Title&lt;/title&gt;<br>
+                    &nbsp;&lt;/head&gt;<br>
+                    &nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&lt!-- Body --&gt<br>
+                    &nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </code>
+            </p>
+            <p>This template provides a starting point for creating web pages and ensures that the document is well-structured and valid. You can expand on this template by adding your content within the <body> element.
+            </p>
+            </article>
+        </section>
+        <section id='Document_Structure_in_HTML' class='main-section'>
+            <header>Document Structure in HTML</header>
+            <article>
+            <p>HTML documents follow a specific structure that is essential for proper rendering by web browsers. Understanding this structure is fundamental for web developers.</p>
+            <h4>The &lt;!DOCTYPE&gt; Declaration</h4>
+            <p>The &lt;!DOCTYPE html&gt; declaration is the very first line of an HTML document. It specifies the version of HTML being used. In modern web development, &lt;!DOCTYPE html&gt; is used to indicate HTML5, the latest standard. Correctly declaring the doctype ensures that browsers interpret the document according to the correct standards.</p>
+            <h4>The &lt;html&gt; Element</h4>
+            <p>The &lt;html&gt; element serves as the root element of every HTML page. It encapsulates the entire content of the document. All other HTML elements are nested within it. The opening &lt;html&gt; tag is followed by the document's language attribute, such as lang='en' for English. The &lt;html&gt; element defines the document's structure and content.</p>
+            <h4>The &lt;head&gt; Element</h4>
+            <p>The &lt;head&gt; element contains crucial metadata about the page. It includes information such as the character set used (specified with &lt;meta charset="utf-8"&gt;), the page's title, and references to external resources like stylesheets and scripts. This metadata is vital for search engine optimization (SEO), correct rendering, and proper document interpretation.</p>
+            <h4>The &lt;body&gt; Element</h4>
+            <p>The &lt;body&gt; element is where the primary content of the web page is placed. This is where you include text, images, links, and interactive elements like forms. Everything inside the &lt;body&gt; tag is what users see when they visit your web page. The &lt;body&gt; element is where you structure and organize the visual content and user interactions.</p>
+            </article>
+        </section>
+        <section id="Text_Content" class="main-section">
+            <header>Text Content</header>
+            <article>
+            <h4>Headings (`&lt;h1&gt;` to `&lt;h6&gt;`)</h4>
+          <p>
+        HTML provides six levels of headings, from `&lt;h1&gt;` (the highest) to `&lt;h6&gt;` (the lowest). These tags are used to structure content hierarchically, with `&lt;h1&gt;` indicating the main heading and `&lt;h6&gt;` being used for subheadings.
+    </p>
+    <h4>Paragraphs (`&lt;p&gt;`)</h4>
+    <p>
+        The `&lt;p&gt;` tag is used for creating paragraphs of text. It is the most common way to structure and separate blocks of text.
+    </p>
+    <h4>Lists (`&lt;ul&gt;`, `&lt;ol&gt;`, `&lt;li&gt;`)</h4>
+    <p>
+        HTML offers two types of lists: unordered lists (`&lt;ul&gt;`) and ordered lists (`&lt;ol&gt`). Items within lists are defined using the `&lt;li&gt;` (list item) tag. Unordered lists typically use bullet points, while ordered lists use numbers or letters.
+    </p>
+    <h4>Links (`&lt;a&gt;`)</h4>
+    <p>
+        Links are created using the `&lt;a&gt;` (anchor) tag and are used to navigate to other web pages, resources, or sections within the same page. Links often include attributes such as `href` to specify the URL and `target` to determine how the linked content should open.
+    </p>
+    <h4>Code :</h4>
+    <code>
+        &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+        &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+        &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+        &lt;h4&gt;Heading 4&lt;/h4&gt;<br>
+        &lt;h5&gt;Heading 5&lt;/h5&gt;<br>
+        &lt;h6&gt;Heading 6&lt;/h6&gt;<br>
+        &lt;p&gt;Paragraph&lt;/p&gt;<br>
+        &lt;ul&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Unordered List Item 1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Unordered List Item 2&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Unordered List Item 3&lt;/li&gt;<br>
+        &lt;/ul&gt;<br>
+        &lt;ol&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Ordered List Item 1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Ordered List Item 2&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Ordered List Item 3&lt;/li&gt;<br>
+        &lt;/ol&gt;<br>
+        &lt;a href="#"&gt;&lt;/a&gt;<br>
+    </code>
+            </article>
+        </section>
+        <section id="Images_and_Media" class="main-section">
+            <header>Images and Media</header>
+            <article>
+                <h4>Inserting Images (`&lt;img&gt;`)</h4>
+                <p>
+        In HTML, images are inserted using the `&lt;img&gt;` tag. This tag allows you to display images on your web page. It includes attributes such as `src` to specify the image file's source, `alt` to provide alternative text for accessibility, and `width` and `height` to control the image's dimensions.
+    </p>
+    <h4>Embedding Audio (`&lt;audio&gt;`)</h4>
+    <p>
+        To include audio files on your web page, you can use the `&lt;audio&gt;` element. This tag allows you to embed audio content, such as music or sound effects. You can specify the audio file's source with the `src` attribute and include controls for playback with the `controls` attribute.
+    </p>
+    <h4>Embedding Video (`&lt;video&gt;`)</h4>
+    <p>
+        The `&lt;video&gt;` element is used for embedding video content. You can include video files on your web page by specifying the video source using the `src` attribute. Like audio, you can add playback controls using the `controls` attribute. Additionally, you can set the video's width and height.
+    </p>
+            
+    <h4>Code :</h4>
+
+    <code>
+        &lt;img src="image.jpg" alt="Image Description"&gt;<br>
+        
+        &lt;img src="logo.png" alt="Logo"&gt;<br>
+        
+        &lt;video src="video.mp4" controls&gt;<br>
+        &nbsp;&nbsp;
+        &lt;source src="video.mp4" type="video/mp4"&gt;<br>
+        &nbsp;&nbsp;
+        &lt;source src="video.webm" type="video/webm"&gt;<br>
+        &nbsp;  &nbsp;video tag.<br>
+        &lt;/video&gt;<br>
+    </code>
+    </article>
+</section>
+
+        <section id="Forms_and_User_Input" class="main-section">
+            <header>Forms and User Input</header>
+            <article>
+    <h4>Creating Forms (`&lt;form&gt;`)</h4>
+    <p>
+        Forms are essential for user interaction on websites. HTML provides the `&lt;form&gt;` element to create forms for various purposes, such as user login, registration, and data submission. The `&lt;form&gt;` element encompasses form controls and defines how data is sent to the server for processing.
+    </p>
+    <h4>Form Controls (`&lt;input&gt;`, `&lt;textarea&gt;`, `&lt;select&gt;`)</h4>
+    <p>
+        HTML offers a range of form controls, including text input fields (`&lt;input type="text"&gt;`), text areas for longer text input (`&lt;textarea&gt;`), and select elements for dropdown menus (`&lt;select&gt;`). Each control has specific attributes and behaviors to collect user input.
+    </p>
+    <h4>Form Validation</h4>
+    <p>
+        Ensuring the accuracy and integrity of user-submitted data is critical. HTML5 introduces built-in form validation features, reducing the need for JavaScript. Attributes like `required` and `pattern` enable you to define validation rules and provide user-friendly error messages.
+    </p>
+
+    <h4>Code :</h4>
+    <code>
+        &lt;form action="/submit" method="post"&gt;<br>
+        &nbsp;&nbsp;
+        &lt;label for="username"&gt;Username:&lt;/label&gt;<br>
+        &nbsp;&nbsp;
+        &lt;input type="text" id="username" name="username"&gt;<br>
+        &nbsp;&nbsp;
+        &lt;label for="password"&gt;Password:&lt;/label&gt;<br>
+        &nbsp;&nbsp;
+        &lt;input type="password" id="password" name="password"&gt;<br>
+        &nbsp;&nbsp;
+        &lt;input type="submit" value="Submit"&gt;<br>
+        &lt;/form&gt;<br>
+    </code>
+    </article>
+        </section>
+        <section id="Semantic_HTML" class="main-section">
+            <header>Semantic HTML</header>
+            <article>
+    <h4>Semantic Elements in HTML5</h4>
+    <p>
+        HTML5 introduces a set of semantic elements that provide meaning and structure to your content. These elements, including `&lt;header&gt;`, `&lt;nav&gt;`, `&lt;main&gt;`, `&lt;section&gt;`, `&lt;article&gt;`, and `&lt;footer&gt;`, help define the purpose and role of content within your web page.
+    </p>
+    <h4>Benefits of Semantic HTML</h4>
+    <p>
+        Using semantic HTML elements goes beyond visual presentation. It improves accessibility, search engine optimization (SEO), and the overall structure of your document. Screen readers and search engines can better understand and interpret the content, resulting in a more inclusive and SEO-friendly web page.
+    </p>
+    <h4>Using `&lt;header&gt;`, `&lt;nav&gt;`, `&lt;main&gt;`, `&lt;section&gt;`, `&lt;article&gt;`, `&lt;footer&gt;`</h4>
+    <p>
+        Each of the semantic elements serves a specific purpose. `&lt;header&gt;` represents introductory content or a container for navigational links. `&lt;nav&gt;` is used for navigation menus. `&lt;main&gt;` signifies the main content of the page, while `&lt;section&gt;` divides content into thematic sections. `&lt;article&gt;` encapsulates standalone content, like news articles. `&lt;footer&gt;` contains information about the author or copyright details.
+    </p>
+    </article>
+        </section>
+        <section id="HTML_Attributes" class="main-section">
+            <header>HTML Attributes</header>
+            <article>
+    <h4>Understanding HTML Attributes</h4>
+    <p>
+        HTML attributes provide additional information about HTML elements. They are key-value pairs that modify an element's properties or behavior. Attributes play a crucial role in controlling how elements are displayed or function.
+    </p>
+    <h4>Common Attributes</h4>
+    <p>
+        There are many HTML attributes, but some are commonly used across various elements. These include `id` for uniquely identifying elements, `class` for defining CSS styles, `src` for specifying image or media sources, and `href` for creating links to other resources. Understanding when and how to use these attributes is essential for effective web development.
+    </p>
+    <h4>Custom Data Attributes</h4>
+    <p>
+        Custom data attributes, often prefixed with `data-`, allow you to store custom data private to your application or for scripting purposes. These attributes are valuable for storing information that doesn't have a direct impact on the presentation but is needed for JavaScript functionality.
+    </p>
+    </article>
+        </section>
+        <section id="Advanced_HTML_Features" class="main-section">
+            <header>Advanced HTML Features</header>
+            <article>
+    <h4>HTML Tables (`&lt;table&gt;`, `&lt;tr&gt;`, `&lt;td&gt;`)</h4>
+    <p>
+        HTML tables are used to display data in a structured format. They consist of a `&lt;table&gt;` element to create the table, `&lt;tr&gt;` elements for table rows, and `&lt;td&gt;` elements for table data cells. Tables are versatile and can be used for various purposes, including presenting data, creating layouts, and more.
+    </p>
+    <h4>HTML Forms: Advanced Controls (`&lt;input&gt;` types)</h4>
+    <p>
+        HTML forms support advanced input controls with various types such as text, checkboxes, radio buttons, and more. These controls are essential for user interaction and data collection. Understanding the different input types and their attributes is crucial for building effective web forms.
+    </p>
+    <h4>Embedded Content with Iframes (`&lt;iframe&gt;`)</h4>
+    <p>
+        The `&lt;iframe&gt;` element allows you to embed external content, such as videos, maps, or other web pages, within your HTML document. It provides a way to integrate content from third-party sources and is commonly used for multimedia and interactive features.
+    </p>
+    <h4>Working with HTML5 Canvas and SVG</h4>
+    <p>
+        HTML5 introduces the `&lt;canvas&gt;` element for rendering graphics and animations directly in the browser using JavaScript. Scalable Vector Graphics (SVG) is another XML-based format for creating vector graphics. Both technologies enable the creation of dynamic visual content on web pages.
+    </p>
+    <h4>Code :</h4>
+    <code>
+        &lt;table&gt;<br>
+        &nbsp;&lt;tr&gt;<br>
+        &nbsp;&nbsp;&lt;td&gt;Table Data&lt;/td&gt;<br>
+        &nbsp;&lt;/tr&gt;<br>
+        &lt;/table&gt;<br>
+        
+        &lt;form action="/submit" method="post"&gt;<br>
+        &nbsp;&nbsp;&lt;input type="text" id="username" name="username" placeholder="Username"&gt;<br>
+        &nbsp;&nbsp;&lt;input type="password" id="password" name="password" placeholder="Password"&gt;<br>
+        &nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;<br>
+        &lt;/form&gt;<br><br>
+        
+        &lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;<br><br>
+        
+        &lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;<br>
+        &lt;canvas id="myCanvas" width="200" height="100"&gt;<br>
+        &lt;svg width="100" height="100"&gt;<br>
+        &nbsp;&nbsp;&lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /&gt;<br>
+        &lt;/svg&gt;<br>
+    </code>
+    </article>
+        </section>
+        <section id="References_and_Resources" class="main-section">
+            <header>References and Resources</header>
+            <article>
+    <h4>Links to Official HTML Documentation</h4>
+    <p>
+        To dive deeper into HTML and stay up-to-date with the latest standards and features, you can explore the official HTML documentation provided by the World Wide Web Consortium (W3C). These resources offer in-depth information and specifications.
+    </p>
+    <h4>Recommended Books and Online Tutorials</h4>
+    <p>
+        Learning HTML can be greatly aided by books and online tutorials. There are many resources available that cater to various skill levels, from beginners to advanced developers. Consider referring to highly recommended books and tutorials to expand your HTML knowledge.
+    </p>
+    <h4>Community and Forums for HTML Developers</h4>
+    <p>
+        Engaging with the HTML developer community can be a valuable experience. There are numerous online forums, discussion boards, and communities where you can seek help, share knowledge, and stay updated on industry trends. Active participation in these communities can enhance your HTML skills.
+    </p>
+    <h4>Link for web dev version in whatwg</h4>
+    <a href='https://html.spec.whatwg.org/dev/introduction.html'><p>https://html.spec.whatwg.org/dev/introduction.html#introduction</p></a>
+    </article>
+</section>
+    </main>
+  </body>
+</html>
